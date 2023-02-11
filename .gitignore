@@ -1,0 +1,27 @@
+# Frontend packages and builds
+frontend/node_modules
+frontend/dist
+
+# Wails binaries and temp files
+build/bin
+build/windows/installer/wails_tools.nsh
+*.syso
+
+# Wails generated files
+frontend/packages.json.md5
+frontend/wailsjs/
+
+# Test binary, built with `go test -c`
+*.test
+
+# Project
+**.idea/
+frontend/.idea/
+
+# **.vscode/
+**.DS_Store
+
+doc/**.puml
+out/**
+
+log/

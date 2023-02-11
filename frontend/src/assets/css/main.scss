@@ -1,0 +1,32 @@
+html,
+body {
+  background: transparent;
+  overscroll-behavior: none;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  /* 隐藏滚动条 */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#app {
+  background: rgba(246, 245, 247, 0.95);
+	font-family: 'Helvetica Neue', 'Helvetica', 'PingFang SC', 'Sarasa Gothic SC', 'Source Han Sans', 'Noto Sans SC', 'Alibaba Puhuiti 2', 'Alibaba Puhuiti', Avenir, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.noscroll {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

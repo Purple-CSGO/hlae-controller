@@ -1,0 +1,25 @@
+{
+  "name": "hlae-controller",
+  "outputfilename": "HLAE-Controller.exe",
+  "assetdir": "frontend/dist",
+  "wailsjsdir": "frontend",
+  "frontend:install": "pnpm install",
+  "frontend:build": "pnpm build",
+  "frontend:dev:watcher": "pnpm dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "One-Studio",
+    "email": "438518244@qq.com"
+  },
+  "Info": {
+    "companyName": "One-Studio",
+    "productName": "HLAE-Controller",
+    "productVersion": "0.0.2.2",
+    "copyright": "Copyright © 2023 by One Studio",
+    "comments": "Built using Wails (https://wails.app)"
+  },
+  "debounceMS": 500,
+  "devserverurl": "http://localhost:34115",
+  "appargs": "",
+  "obfuscated": true
+}
