@@ -61,7 +61,7 @@ func main() {
 			WebviewIsTransparent: true,
 			WindowIsTranslucent:  true,
 			About: &mac.AboutInfo{
-				Title:   "HLAE Control",
+				Title:   "HLAE Controller",
 				Message: "Externel Control App for HLAE",
 				Icon:    icon,
 			},
