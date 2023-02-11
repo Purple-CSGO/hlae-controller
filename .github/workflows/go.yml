@@ -1,0 +1,37 @@
+# This workflow will build a golang project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
+
+name: Go
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+    runs-on: windows
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v3
+      
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v3.6.0
+
+    - name: Build
+      run: go build -v ./...
+    
+    - name: run
+      run: |
+        echo build wails
+        npm i -g pnpm
+        go get
+        go install github.com/wailsapp/wails/v2/cmd/wails@latest
+        wails build
+        ls
+    
+    # TODO: zip and release
